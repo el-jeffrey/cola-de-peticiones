@@ -1,11 +1,15 @@
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JRootPane;
 import javax.swing.border.EmptyBorder;
+
+import Modelo.ClsRequestDTO;
+
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JLabel;
@@ -23,12 +27,17 @@ public class GetPeticion extends JFrame {
 	private JPanel contentPane;
 	private JTextField textField;
 	private JTextField textField_1;
-
+	
+	private ClsRequestDTO obj = new ClsRequestDTO();
+	private String modo = Global.Auxiliar.modo;
+	
 	public GetPeticion() {
-		setTitle("Nueva Petici\u00F3n");
+		obj = Global.Auxiliar.getCurrent_obj();
+		
+		setTitle((modo == "N" ? "Nueva" : "Editar") + "Petici\u00F3n");
 
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 700, 333);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		setBounds(100, 100, 700, 384);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -88,9 +97,8 @@ public class GetPeticion extends JFrame {
 						.addComponent(lblUrl))
 					.addPreferredGap(ComponentPlacement.RELATED)
 					.addComponent(scrollPane, GroupLayout.PREFERRED_SIZE, 180, GroupLayout.PREFERRED_SIZE)
-					.addPreferredGap(ComponentPlacement.UNRELATED)
-					.addComponent(btnNewButton)
-					.addGap(16))
+					.addPreferredGap(ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
+					.addComponent(btnNewButton))
 		);
 		
 		JTabbedPane pestañas = new JTabbedPane(JTabbedPane.TOP);
@@ -108,10 +116,8 @@ public class GetPeticion extends JFrame {
 			gl_panelBody.createParallelGroup(Alignment.LEADING)
 				.addComponent(textArea, GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
 		);
-		panelBody.setLayout(gl_panelBody);
 		
-		JPanel panelAut = new JPanel();		
-		pestañas.add("Autenticación", panelAut);
+		panelBody.setLayout(gl_panelBody);
 		
 		JPanel panelHeaders = new JPanel();		
 		pestañas.add("Headers", panelHeaders);
@@ -122,6 +128,11 @@ public class GetPeticion extends JFrame {
 	  }
 
 	  private void createAndShowUI(){
+		  
+		  if(modo!="N") {
+			  
+		  }
+		  
 	    /*setTitle("This JFRAME looks like JDialog");
 	    setSize(new Dimension(500,100));
 	    setUndecorated(true);
@@ -137,12 +148,29 @@ public class GetPeticion extends JFrame {
 	    //});
 	  }
 	
+	  public void actionPerformed(ActionEvent ae) {
+			String choice = ae.getActionCommand();
+			if (choice.equals("Quit")) {
+				System.exit(0);
+			} else if (choice.equals("on-save")) {
+				Global.Auxiliar.setCurrent_obj(new ClsRequestDTO());
+//				CapturarPeticion dlg = new CapturarPeticion(this, tituloCapturaPeticion);
+				GetPeticion  dlg = new GetPeticion();
+				String results = dlg.run();
+				/*if (results[0] != null) {
+					JOptionPane.showMessageDialog(this, results[0] + ", color: " + results[1]);
+				}*/
+			}
+		}
+	  
 	/**
 	 * Launch the application.
 	 */
 	public static String run() {
 		GetPeticion frame = new GetPeticion();
+		
 		frame.setLocationRelativeTo(null);
+		frame.setResizable(false);
 		frame.setVisible(true);
 		return "ok";
 	}
