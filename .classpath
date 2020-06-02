@@ -7,5 +7,12 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="jgoodies-forms-1.8.0.jar" sourcepath="jgoodies-forms-1.8.0-sources.jar"/>
+	<classpathentry kind="lib" path="javax.json-1.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Erick Espinosa/Downloads/itextpdf-5.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Erick Espinosa/Documents/NetBeansProjects/Libs/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Erick Espinosa/Documents/NetBeansProjects/Libs/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Erick Espinosa/Documents/NetBeansProjects/Libs/httpclient-4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Erick Espinosa/Documents/NetBeansProjects/Libs/httpcore-4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Erick Espinosa/Downloads/gson-2.8.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

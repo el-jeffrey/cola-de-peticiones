@@ -1,0 +1,102 @@
+Lista de productos: 
+[
+  {
+    "id": 2,
+    "nombre": "Cuaderno Erick",
+    "valor_unitario": 2000.00
+  },
+  {
+    "id": 3,
+    "nombre": "Control Remoto",
+    "valor_unitario": 15500.00
+  },
+  {
+    "id": 6,
+    "nombre": "Alcohol",
+    "valor_unitario": 3000.00
+  },
+  {
+    "id": 7,
+    "nombre": "Abanico",
+    "valor_unitario": 160000.00
+  },
+  {
+    "id": 8,
+    "nombre": "XBOX 360",
+    "valor_unitario": 1200000.00
+  },
+  {
+    "id": 9,
+    "nombre": "TV 55 pulgadas",
+    "valor_unitario": 2000000.00
+  },
+  {
+    "id": 10,
+    "nombre": "Cuaderno Erick",
+    "valor_unitario": 2000.00
+  }
+]
+ 
+***************************************************************************
+***************************************************************************
+
+Lista de solicitudes: 
+[
+  {
+    "secuencia": 4998,
+    "persona": "PEDRITO BEDOYA MARRUGO",
+    "estado": "C",
+    "fecha": "2020-05-01T05:00:00.000+0000",
+    "valor": 300000,
+    "descripcion": "CANCELO FACTURA Nº51001 POR SERVICIO DE AMBULANCIA. CORRECCIÓN DE LOS COMPROMISOS PASADOS. PEDRO BEDOYA."
+  },
+  {
+    "secuencia": 5000,
+    "persona": "GUILLERMO EDUARDO BOLÍVAR GUTIERREZ",
+    "estado": "G",
+    "fecha": "2020-05-20T05:00:00.000+0000",
+    "valor": 100000,
+    "descripcion": "CONTRATO NO. 5000"
+  },
+  {
+    "secuencia": 5001,
+    "persona": "KEILA PATRICIA TORRES TORRES",
+    "estado": "C",
+    "fecha": "2020-05-13T05:00:00.000+0000",
+    "valor": 2500000,
+    "descripcion": "CANCELO FACTURA Nº206123 POR SERVICIO DE AMBULANCIA. CORRECCIÓN DE LOS COMPROMISOS PASADOS. KEILA TORRES."
+  },
+  {
+    "secuencia": 5002,
+    "persona": "FÉLIX MARRUGO PALOMINO",
+    "estado": "C",
+    "fecha": "2020-05-12T05:00:00.000+0000",
+    "valor": 2300000,
+    "descripcion": "CANCELO FACTURA Nº206000 POR SERVICIO DE AMBULANCIA. CORRECCIÓN DE LOS COMPROMISOS PASADOS. FÉLIX MARRUGO."
+  },
+  {
+    "secuencia": 5003,
+    "persona": "KELLY JOHANA CASTILLO MACÍAS",
+    "estado": "A",
+    "fecha": "2020-05-10T05:00:00.000+0000",
+    "valor": 1300000,
+    "descripcion": "CANCELO FACTURA Nº206001 POR SERVICIO DE AMBULANCIA. CORRECCIÓN DE LOS COMPROMISOS PASADOS."
+  },
+  {
+    "secuencia": 5004,
+    "persona": "RODOLFITO ALQUERQUE SUÁREZ",
+    "estado": "G",
+    "fecha": "2020-05-11T05:00:00.000+0000",
+    "valor": 1500000,
+    "descripcion": "CANCELO FACTURA Nº102000 POR SERVICIO DE AMBULANCIA. CORRECCIÓN DE LOS COMPROMISOS PASADOS."
+  },
+  {
+    "secuencia": 5005,
+    "persona": "RAMIRO TABORDA",
+    "estado": "C",
+    "fecha": "2020-04-30T05:00:00.000+0000",
+    "valor": 120000,
+    "descripcion": "CANCELO FACTURA Nº512000 POR SERVICIO DE AMBULANCIA. CORRECCIÓN DE LOS COMPROMISOS PASADOS."
+  }
+]
+ 
